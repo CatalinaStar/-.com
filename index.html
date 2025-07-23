@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalina Star - المتجر الفخم</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --dark-bg:#121212;--mid-bg:#1e1e1e;--light-bg:#2a2a2a;--accent:#e6b800;--text-light:#f5f5f5;--text-muted:#b0b0b0;--btn-bg:#e6b800;--btn-hover:#d4a600;--radius:8px;--transition:0.3s; }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Montserrat',sans-serif;background:var(--dark-bg);color:var(--text-light);overflow-x:hidden;}
+    .wrapper{max-width:1200px;margin:0 auto;padding:0 1rem;}
+    nav{background:var(--mid-bg);padding:1rem;border-radius:var(--radius) var(--radius) 0 0;display:flex;justify-content:space-between;align-items:center;}
+    .logo{font-size:1.8rem;font-weight:700;color:var(--accent);opacity:0;animation:fadeIn 1s forwards;}
+    nav ul{display:flex;gap:1rem;}
+    nav a{color:var(--text-light);text-decoration:none;font-weight:500;transition:color var(--transition);}
+    nav a:hover{color:var(--accent);}
+    header{text-align:center;padding:4rem 1rem;background:var(--light-bg) url('https://i.postimg.cc/kgMN6Rg1/0b161120-ee36-41ca-b53e-5c15d8ba75a9.jpg') center/cover no-repeat;border-radius:0 0 var(--radius) var(--radius);position:relative;}
+    header::before{content:'';position:absolute;inset:0;background:rgba(18,18,18,0.7);border-radius:0 0 var(--radius) var(--radius);}
+    header h1,header p{position:relative;z-index:1;opacity:0;transform:translateY(30px);animation:slideUp 1s forwards;}
+    header h1{font-size:3rem;margin-bottom:.5rem;animation-delay:.5s;}
+    header p{font-size:1.2rem;color:var(--text-muted);animation-delay:.8s;}
+    .social-icons{display:flex;justify-content:center;gap:1rem;margin:1rem 0;opacity:0;animation:fadeIn 1s forwards;animation-delay:1s;}
+    .social-icons img{width:32px;height:32px;border-radius:50%;transition:transform var(--transition);} .social-icons img:hover{transform:scale(1.1);}
+    section{margin-bottom:2rem;}
+    h2{text-align:center;font-size:2rem;margin:2rem 0 1rem;color:var(--accent);opacity:0;animation:fadeIn 1s forwards;animation-delay:1.2s;}
+    .grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:1rem;padding-bottom:1rem;}
+    .grid .card{flex:0 0 30%;scroll-snap-align:start;background:var(--mid-bg);border-radius:var(--radius);box-shadow:0 8px 20px rgba(0,0,0,0.5);transition:transform var(--transition),opacity var(--transition);opacity:0;transform:translateY(20px);}
+    .grid .card.visible{opacity:1;transform:translateY(0);}
+    .card:hover{transform:translateY(-5px);}
+    .card img{width:100%;height:180px;object-fit:cover;transition:transform var(--transition);}
+    .card:hover img{transform:scale(1.05);}
+    .card-content{padding:1rem;text-align:center;}
+    .price{color:var(--accent);font-size:1.2rem;font-weight:bold;margin:.5rem 0;}
+    .desc{color:var(--text-muted);font-size:.95rem;margin-bottom:.8rem;}
+    .rating{unicode-bidi:bidi-override;direction:ltr;font-size:1.2rem;margin-bottom:.8rem;}
+    .rating span{cursor:pointer;color:#555;transition:color var(--transition);} .rating .filled{color:gold;}
+    .btn{background:var(--btn-bg);color:var(--dark-bg);padding:.6rem 1rem;border-radius:var(--radius);text-decoration:none;font-weight:600;transition:background var(--transition),transform var(--transition);} .btn:hover{background:var(--btn-hover);transform:translateY(-2px);}
+    footer{background:var(--mid-bg);color:var(--text-muted);text-align:center;padding:1.5rem;border-radius:var(--radius);} .visits{margin-top:.5rem;font-size:.9rem;}
+    @keyframes fadeIn{to{opacity:1;}}@keyframes slideUp{to{opacity:1;transform:translateY(0);}}@media(max-width:1024px){.grid .card{flex:0 0 40%;}}@media(max-width:768px){.grid .card{flex:0 0 60%;}}@media(max-width:500px){.grid .card{flex:0 0 80%;}}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <div class="logo">Catalina Star</div>
+      <ul><li><a href="#products">المنتجات</a></li><li><a href="#servers">السيرفرات</a></li><li><a href="https://wa.me/212621512351" target="_blank">تواصل معنا</a></li></ul>
+    </nav>
+    <header>
+      <h1>تسوق الرفاهية</h1>
+      <p>أفضل الأجهزة والسيرفرات بأعلى جودة</p>
+    </header>
+    <div class="social-icons"><a href="https://www.facebook.com/share/16snXEj2YS/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook"></a><a href="https://www.instagram.com/adil.fillali.376?igsh=YzljYTk1ODg3Zg==" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a><a href="https://www.tiktok.com/@adil.filali75?_t=ZM-8yFQWciGnaA&_r=1" target="_blank"><img src="https://i.postimg.cc/xCkgWX29/Real-Tik-Tok-Logo.jpg" alt="TikTok"></a></div>
+    <main>
+      <section id="products">
+        <h2>المنتجات التلفزيونية</h2>
+        <div class="grid">
+          <div class="card"><img src="https://i.postimg.cc/vmxDKGmL/photo-2025-07-22-01-01-50.jpg" alt="تيليكوموند ذكي"><div class="card-content"><div class="price" data-price-mad="400">400 درهم</div><div class="desc">جهاز تحكم ذكي بالصوت لتجربة استخدام مريحة.</div><div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div><a href="https://wa.me/212621512351?text=مرحباً، أرغب في شراء تيليكوموند%20ذكي%20بسعر%20400%20درهم" class="btn" target="_blank">اطلب الآن</a></div></div>
+          <div class="card"><img src="https://i.postimg.cc/0NG1j4X1/photo-2025-07-22-01-08-14.jpg" alt="تيليكوموند متطور"><div class="card-content"><div class="price" data-price-mad="430">430 درهم</div><div class="desc">ريموت فاخر يدعم الأوامر الصوتية والوسائط المتعددة.</div><div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div><a href="https://wa.me/212621512351?text=مرحباً، أرغب في شراء ريموت%20متطور%20بسعر%20430%20درهم" class="btn" target="_blank">اطلب الآن</a></div></div>
+          <div class="card"><img src="https://i.postimg.cc/0Nyh5NSD/photo-2025-07-22-01-13-50.jpg" alt="Smarter Max"><div class="card-content"><div class="price" data-price-mad="230">230 درهم</div><div class="desc">Smarter Max لتجربة مشاهدة عالية الجودة.</div><div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div><a href="https://wa.me/212621512351?text=مرحباً، أرغب في شراء Smarter%20Max%20بسعر%20230%20درهم" class="btn" target="_blank">اطلب الآن</a></div></div>
+        </div>
+      </section>
+      <section id="servers">
+        <h2>السيرفرات</h2>
+        <div class="grid">
+          <div class="card"><img src="https://i.postimg.cc/CxFQJKmX/photo-2025-07-22-01-19-41.jpg" alt="Amigo 8K"><div class="card-content"><div class="price" data-price-mad="250">250 درهم</div><div class="desc">Amigo 8K لبث المباريات والأفلام بأعلى دقة.</div><div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div><a href="https://wa.me/212621512351?text=مرحباً، أرغب في شراء سيرفر%20Amigo%208K%20بسعر%20250%20درهم" class="btn" target="_blank">اطلب السيرفر</a></div></div>
+          <div class="card"><img src="https://i.postimg.cc/V6nvfw29/Chat-GPT-Image-22-juil-2025-05-51-09.png" alt="Premium 8K"><div class="card-content"><div class="price" data-price-mad="300">300 درهم</div><div class="desc">Premium 8K لمشاهدة بلا حدود.</div><div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div><a href="https://wa.me/212621512351?text=مرحباً، أرغب في شراء سيرفر%20Premium%208K%20بسعر%20300%20درهم" class="btn" target="_blank">اطلب السيرفر</a></div></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social-icons"><a href="https://www.facebook.com/share/16snXEj2YS/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook"></a><a href="https://www.instagram.com/adil.fillali.376?igsh=YzljYTk1ODg3Zg==" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a><a href="https://www.tiktok.com/@adil.filali75?_t=ZM-8yFQWciGnaA&_r=1" target="_blank"><img src="https://i.postimg.cc/xCkgWX29/Real-Tik-Tok-Logo.jpg" alt="TikTok"></a></div>
+      <p>&copy; 2025 Catalina Star - جميع الحقوق محفوظة</p>
+      <div class="visits">عدد الزوار: <span id="visit-count">0</span></div>
+    </footer>
+  </div>
+  <script>
+    const cards=document.querySelectorAll('.grid .card');const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.3});cards.forEach(c=>obs.observe(c));
+    let visits=parseInt(localStorage.getItem('visitCount'))||0;visits++;localStorage.setItem('visitCount',visits);document.getElementById('visit-count').textContent=visits;
+    (async()=>{try{const res=await fetch('https://ipapi.co/json/');if(!res.ok)throw new Error('Network');const{country}=await res.json();if(country!=='MA'){const rate=0.1;document.querySelectorAll('.price').forEach(el=>{const mad=parseFloat(el.dataset.priceMad);if(!isNaN(mad)&&mad>0)el.textContent=`${(mad*rate).toFixed(2)} $`;});}}catch(err){console.warn('Currency detect failed',err);}})();
+  </script>
+</body>
+</html>
